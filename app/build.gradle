@@ -40,6 +40,9 @@ android {
         }
     }
 
+    // while --proguard-conditional-keep-rules does indeed generate conditional -if ... -keep ...
+    // clauses in ./app/build/intermediates/aapt_proguard_file/release/aapt_rules.txt it does not
+    // seem to make any difference in APK size, at least not for this small test project!
     aaptOptions {
         additionalParameters('--proguard-conditional-keep-rules')
     }
