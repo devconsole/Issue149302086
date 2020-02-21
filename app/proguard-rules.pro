@@ -1,3 +1,6 @@
+# For comparing APK sizes we don't need to obfuscate
+-dontobfuscate
+
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # --proguard-conditional-keep-rules does not work without this declaration!
