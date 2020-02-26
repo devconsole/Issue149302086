@@ -8,6 +8,11 @@
 -keep class androidx.constraintlayout.widget.ConstraintLayout { *; }
 
 
+# Constructors are kept too
+
+-whyareyoukeeping class com.google.android.material.chip.Chip { *; }
+
+
 # The following classes only seem to be kept because of proguard-android-optimize.txt
 # keeps setters in Views so that animations can still work:
 #
